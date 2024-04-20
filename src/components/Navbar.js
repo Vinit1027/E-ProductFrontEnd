@@ -22,7 +22,7 @@ const settings = ['Dashboard', 'Wishlist', 'Logout'];
 
 function Navbar({cartData}) {
 
-  const [auth, setAuth] = useState({ user : Cookies.get('User')});
+  const [auth, setAuth] = useState({ user : localStorage.getItem("userid")});
 
   const navigate = useNavigate();
 

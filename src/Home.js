@@ -56,7 +56,7 @@ const Home = ({data, HandleChangePage}) => {
 
     if(userid != null || prodid === true){
 
-      const url = '/apiv1/cart/add-to-cart'
+      const url = 'https://e-products-api.onrender.com/apiv1/cart/add-to-cart'
   
   
       await axios.post(url,{

@@ -80,7 +80,7 @@ const BetsellingSection = ({prodData , HandleChangePage }) => {
 
                         <div className='wholeshiz'>
                           <div onClick={()=>{ HandleChangePage(ele); SwitchIndiPage();}}>
-                            <img className='prodimg' src={`http://localhost:8001/${ele.images[0]}`}></img>
+                            <img className='prodimg' src={`https://e-products-api.onrender.com/${ele.images[0]}`}></img>
                           </div>
                           <div className='infobox'>
                             <h2 className='prodname'>
@@ -132,7 +132,7 @@ const BetsellingSection = ({prodData , HandleChangePage }) => {
 
                         <div className='wholeshiz'>
                           <div onClick={()=>{ HandleChangePage(ele); SwitchIndiPage();}}>
-                            <img className='prodimg' src={`http://localhost:8001/${ele.images[0]}`}></img>
+                            <img className='prodimg' src={`https://e-products-api.onrender.com/${ele.images[0]}`}></img>
                           </div>
                           <div className='infobox'>
                             <h2 className='prodname'>
@@ -184,7 +184,7 @@ const BetsellingSection = ({prodData , HandleChangePage }) => {
 
                         <div className='wholeshiz'>
                           <div onClick={()=>{ HandleChangePage(ele); SwitchIndiPage();}}>
-                            <img className='prodimg' src={`http://localhost:8001/${ele.images[0]}`}></img>
+                            <img className='prodimg' src={`https://e-products-api.onrender.com/${ele.images[0]}`}></img>
                           </div>
                           <div className='infobox'>
                             <h2 className='prodname'>

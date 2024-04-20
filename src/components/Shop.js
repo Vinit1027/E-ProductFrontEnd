@@ -46,13 +46,19 @@ const Shop = ({ Shopdata, setCartdata, getCartData}) => {
 
     if(userid != null || prodid === true){
 
-      const url = '/apiv1/cart/add-to-cart'
+      const url = 'https://e-products-api.onrender.com/apiv1/cart/add-to-cart'
   
   
       await axios.post(url,{
         userID : userid,
         productID : prodid
-      })
+      },
+      {
+        headers : {
+          'Access-Control-Allow-Origin' : "*"
+        }
+      }
+      )
       .then( response => response)
       .then(data => console.log(data.data.message))
       .catch(error => console.log(error))

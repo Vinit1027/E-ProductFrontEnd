@@ -43,7 +43,7 @@ export default function GridBlocks( { featdata} ) {
                     <Grid item lg={2.4} md={2.4} sm={4} xs={6} >
                         <div className='wholeshiz2'>
                           <div onClick={()=>{ HandleChangePage(ele); SwitchIndiPage();}}>
-                            <img className='prodimg2' src={`http://localhost:8001/${ele.images[0]}`}></img>
+                            <img className='prodimg2' src={`https://e-products-api.onrender.com/${ele.images[0]}`}></img>
                           </div>
                           <div className='infobox2'>
                             <h2 className='prodname2'>

@@ -46,7 +46,7 @@ export default function Login() {
     // });
 
 
-    const url = '/apiv1/user/login-user'
+    const url = 'https://e-products-api.onrender.com/apiv1/user/login-user'
 
 
     await axios.post(url,{
@@ -56,6 +56,7 @@ export default function Login() {
     {
       headers: {
         'Content-Type' : 'multipart/form-data',
+        'Access-Control-Allow-Origin' : "*"
       }
     },{
       withCredentials:true,

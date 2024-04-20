@@ -54,7 +54,7 @@ function App() {
 
   const getProductData = async ()=> {
 
-     await axios.get('/apiv1/products/get-products',
+     await axios.get('https://e-products-api.onrender.com/apiv1/products/get-products',
     {
       headers: {
         'Content-Type' : 'multipart/form-data',
@@ -76,7 +76,7 @@ function App() {
 
     const getCartData = async ()=> {
 
-     await axios.get('/apiv1/cart/get-cart',
+     await axios.get('https://e-products-api.onrender.com/apiv1/cart/get-cart',
     {
       headers: {
         'Content-Type' : 'multipart/form-data',

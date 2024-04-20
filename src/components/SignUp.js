@@ -45,7 +45,7 @@ export default function SignUp() {
     //   password: data.get('password'),
     // });
 
-    const url = '/apiv1/user/signup-user'
+    const url = 'https://e-products-api.onrender.com/apiv1/user/signup-user'
 
 
     await axios.post(url,{
@@ -59,6 +59,7 @@ export default function SignUp() {
     {
       headers: {
         'Content-Type' : 'multipart/form-data',
+        'Access-Control-Allow-Origin' : "*"
       }
     },{
       withCredentials:true,

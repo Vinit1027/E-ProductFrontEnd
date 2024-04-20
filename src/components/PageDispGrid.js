@@ -57,13 +57,19 @@ export default function PageDispGrid({ page }) {
 
     if(userid != null || prodid === true){
 
-      const url = '/apiv1/cart/add-to-cart'
+      const url = 'https://e-products-api.onrender.com/apiv1/cart/add-to-cart'
   
   
       await axios.post(url,{
         userID : userid,
         productID : prodid
-      })
+      },
+      {
+        headers : {
+          'Access-Control-Allow-Origin' : "*"
+        }
+      }
+      )
       .then( response => response)
       .then(data => console.log(data.data.message))
       .catch(error => console.log(error))
@@ -113,7 +119,7 @@ export default function PageDispGrid({ page }) {
 
                       return (
                         <div>
-                          <img className='prodimg4' src={`http://localhost:8001/${ig}`}></img>
+                          <img className='prodimg4' src={`https://e-products-api.onrender.com/${ig}`}></img>
                         </div>
                       )
                     })

@@ -43,7 +43,7 @@ export default function GridBlocks2({ dealdata }) {
                         <div className='tbox'>
                             <div className='wholeshiz3'>
                                 <div onClick={()=>{ HandleChangePage(ele); SwitchIndiPage();}}>
-                                    <img className='prodimg3' src={`http://localhost:8001/${ele.images[0]}`}></img>
+                                    <img className='prodimg3' src={`https://e-products-api.onrender.com/${ele.images[0]}`}></img>
                                 </div>
                                 <div className='infobox3'>
                                     <h2 className='prodname3'>

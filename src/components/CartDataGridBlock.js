@@ -31,10 +31,16 @@ export default function CartDataGridBlock({ cartData }) {
 
     const increment = async (id, prodprice, prodquant)=> {
 
-        await axios.patch(`/apiv1/cart/update-quantity/${id}`,
+        await axios.patch(`https://e-products-api.onrender.com/apiv1/cart/update-quantity/${id}`,
         {
             type : 'increment'
-        })
+        },
+        {
+            headers : {
+            'Access-Control-Allow-Origin' : "*"
+            }
+        }
+        )
         .then(response => response)
         .then(data => console.log(data))
         .catch( err => console.log(err))
@@ -61,10 +67,16 @@ export default function CartDataGridBlock({ cartData }) {
 
     const decrement = async (id, prodprice, prodquant)=> {
 
-        await axios.patch(`/apiv1/cart/update-quantity/${id}`,
+        await axios.patch(`https://e-products-api.onrender.com/apiv1/cart/update-quantity/${id}`,
         {
             type : 'decrement'
-        })
+        },
+        {
+            headers : {
+            'Access-Control-Allow-Origin' : "*"
+            }
+        }
+        )
         .then(response => response)
         .then(data => console.log(data))
         .catch( err => console.log(err))
@@ -102,7 +114,12 @@ export default function CartDataGridBlock({ cartData }) {
 
     const deletecartprod = async (id)=> {
 
-        await axios.delete(`/apiv1/cart/deleteCartData/${id}`)
+        await axios.delete(`https://e-products-api.onrender.com/apiv1/cart/deleteCartData/${id}`,
+        {
+            headers : {
+            'Access-Control-Allow-Origin' : "*"
+            }
+        })
         .then(response => response)
         .then(data => console.log(data))
         .catch( err => console.log(err))
@@ -150,7 +167,7 @@ export default function CartDataGridBlock({ cartData }) {
                                         <div>
                                             <div className='cartdatapad2 cartboxflex cartboxgrid'>
                                                 <div>
-                                                    <img src={`http://localhost:8001/${data.image}`} className='cartimag'/>
+                                                    <img src={`https://e-products-api.onrender.com/${data.image}`} className='cartimag'/>
                                                 </div>
                                                 <div className='cartmargleft'>
                                                     <a href='' className='cartname'>{data.name}</a>

@@ -51,7 +51,7 @@ export default function ShopProducts( { FilteredData } ) {
                     <Grid key={ele._id} item lg={3} md={4} sm={4} xs={6} >
                         <div className='wholeshiz2'>
                           <div onClick={()=>{ HandleChangePage(ele); SwitchIndiPage();}}>
-                            <img className='prodimg2' src={`http://localhost:8001/${ele.images[0]}`}></img>
+                            <img className='prodimg2' src={`https://e-products-api.onrender.com/${ele.images[0]}`}></img>
                           </div>
                           <div className='infobox2'>
                             <h2 className='prodname2'>
@@ -102,7 +102,7 @@ export default function ShopProducts( { FilteredData } ) {
                     <Grid key={ele._id} item lg={3} md={4} sm={4} xs={6} >
                         <div className='wholeshiz2'>
                           <div>
-                            <img className='prodimg2' src={`http://localhost:8001/${ele.images[0]}`}></img>
+                            <img className='prodimg2' src={`https://e-products-api.onrender.com/${ele.images[0]}`}></img>
                           </div>
                           <div className='infobox2'>
                             <h2 className='prodname2'>

@@ -58,6 +58,7 @@ function App() {
     {
       headers: {
         'Content-Type' : 'multipart/form-data',
+        'Access-Control-Allow-Origin' : "*"
       }
     },{
       withCredentials:true,
@@ -79,6 +80,7 @@ function App() {
     {
       headers: {
         'Content-Type' : 'multipart/form-data',
+        'Access-Control-Allow-Origin' : "*"
       }
     },{
       withCredentials:true,

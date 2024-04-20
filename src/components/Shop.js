@@ -55,7 +55,7 @@ const Shop = ({ Shopdata, setCartdata, getCartData}) => {
       },
       {
         headers : {
-          'Access-Control-Allow-Origin' : "*"
+          'Access-Control-Allow-Origin' : 'https://e-products.onrender.com/'
         }
       }
       )

@@ -59,7 +59,7 @@ export default function SignUp() {
     {
       headers: {
         'Content-Type' : 'multipart/form-data',
-        'Access-Control-Allow-Origin' : "*"
+        'Access-Control-Allow-Origin' : 'https://e-products.onrender.com/'
       }
     },{
       withCredentials:true,

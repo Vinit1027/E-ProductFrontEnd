@@ -37,7 +37,7 @@ export default function CartDataGridBlock({ cartData }) {
         },
         {
             headers : {
-            'Access-Control-Allow-Origin' : "*"
+            'Access-Control-Allow-Origin' : 'https://e-products.onrender.com/'
             }
         }
         )
@@ -73,7 +73,7 @@ export default function CartDataGridBlock({ cartData }) {
         },
         {
             headers : {
-            'Access-Control-Allow-Origin' : "*"
+            'Access-Control-Allow-Origin' : 'https://e-products.onrender.com/'
             }
         }
         )
@@ -117,7 +117,7 @@ export default function CartDataGridBlock({ cartData }) {
         await axios.delete(`https://e-products-api.onrender.com/apiv1/cart/deleteCartData/${id}`,
         {
             headers : {
-            'Access-Control-Allow-Origin' : "*"
+            'Access-Control-Allow-Origin' : 'https://e-products.onrender.com/'
             }
         })
         .then(response => response)

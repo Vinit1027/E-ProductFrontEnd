@@ -41,8 +41,6 @@ function App() {
 
   const [page2, setPage2] = useState([]);
 
-  console.log(message)
-
   useEffect(()=>{
 
     setTimeout(() => {
@@ -58,7 +56,7 @@ function App() {
     {
       headers: {
         'Content-Type' : 'multipart/form-data',
-        'Access-Control-Allow-Origin' : "*"
+        'Access-Control-Allow-Origin' : 'https://e-products.onrender.com/'
       }
     },{
       withCredentials:true,
@@ -80,7 +78,7 @@ function App() {
     {
       headers: {
         'Content-Type' : 'multipart/form-data',
-        'Access-Control-Allow-Origin' : "*"
+        'Access-Control-Allow-Origin' : 'https://e-products.onrender.com/'
       }
     },{
       withCredentials:true,

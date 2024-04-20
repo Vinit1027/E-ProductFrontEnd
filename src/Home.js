@@ -65,7 +65,7 @@ const Home = ({data, HandleChangePage}) => {
       },
       {
         headers : {
-          'Access-Control-Allow-Origin' : "*"
+          'Access-Control-Allow-Origin' : 'https://e-products.onrender.com/'
         }
       }
       )

@@ -44,7 +44,7 @@ const WhishList = () => {
       },
       {
         headers : {
-          'Access-Control-Allow-Origin' : "*"
+          'Access-Control-Allow-Origin' : 'https://e-products.onrender.com/'
         }
       })
       .then( response => response)

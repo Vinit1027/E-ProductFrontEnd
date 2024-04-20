@@ -34,13 +34,7 @@ export default function CartDataGridBlock({ cartData }) {
         await axios.patch(`https://e-products-api.onrender.com/apiv1/cart/update-quantity/${id}`,
         {
             type : 'increment'
-        },
-        {
-            headers : {
-            'Access-Control-Allow-Origin' : 'https://e-products.onrender.com/'
-            }
-        }
-        )
+        })
         .then(response => response)
         .then(data => console.log(data))
         .catch( err => console.log(err))
@@ -70,13 +64,7 @@ export default function CartDataGridBlock({ cartData }) {
         await axios.patch(`https://e-products-api.onrender.com/apiv1/cart/update-quantity/${id}`,
         {
             type : 'decrement'
-        },
-        {
-            headers : {
-            'Access-Control-Allow-Origin' : 'https://e-products.onrender.com/'
-            }
-        }
-        )
+        })
         .then(response => response)
         .then(data => console.log(data))
         .catch( err => console.log(err))
@@ -114,12 +102,7 @@ export default function CartDataGridBlock({ cartData }) {
 
     const deletecartprod = async (id)=> {
 
-        await axios.delete(`https://e-products-api.onrender.com/apiv1/cart/deleteCartData/${id}`,
-        {
-            headers : {
-            'Access-Control-Allow-Origin' : 'https://e-products.onrender.com/'
-            }
-        })
+        await axios.delete(`https://e-products-api.onrender.com/apiv1/cart/deleteCartData/${id}`)
         .then(response => response)
         .then(data => console.log(data))
         .catch( err => console.log(err))

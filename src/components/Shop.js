@@ -52,13 +52,7 @@ const Shop = ({ Shopdata, setCartdata, getCartData}) => {
       await axios.post(url,{
         userID : userid,
         productID : prodid
-      },
-      {
-        headers : {
-          'Access-Control-Allow-Origin' : 'https://e-products.onrender.com/'
-        }
-      }
-      )
+      })
       .then( response => response)
       .then(data => console.log(data.data.message))
       .catch(error => console.log(error))

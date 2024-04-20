@@ -56,7 +56,6 @@ function App() {
     {
       headers: {
         'Content-Type' : 'multipart/form-data',
-        'Access-Control-Allow-Origin' : 'https://e-products.onrender.com/'
       }
     },{
       withCredentials:true,
@@ -78,7 +77,6 @@ function App() {
     {
       headers: {
         'Content-Type' : 'multipart/form-data',
-        'Access-Control-Allow-Origin' : 'https://e-products.onrender.com/'
       }
     },{
       withCredentials:true,

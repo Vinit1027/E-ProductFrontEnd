@@ -107,13 +107,15 @@ function App() {
   },[page2])
 
 
-  const HandleChangePage = (ele)=> {
+  // const HandleChangePage = (ele)=> {
 
-    localStorage.setItem('page', JSON.stringify([ele]))
+  //   console.log(ele)
 
-    setPage2([ele]);
+  //   localStorage.setItem('page', JSON.stringify([ele]))
 
-  }
+  //   setPage2([ele]);
+
+  // }
 
 
   const [wishdata, setWishdata] = useState([]); 
@@ -361,6 +363,18 @@ function App() {
 
 
 
+  const HandleChangePage = (ele)=> {
+
+    console.log(ele)
+
+    localStorage.setItem('page', JSON.stringify([ele]))
+
+    setPage2([ele]);
+
+  }
+
+
+
 
 
   return (
@@ -379,7 +393,7 @@ function App() {
           <Route path='login' element={<Login/>}/>
           <Route path='signup' element={<SignUp/>}/>
           <Route path='dashboard' element={<Dashboard/>}/>
-          <Route path='wishlist' element={<DataContext.Provider value={{ getCartData, wishdata, setWishdata2, CategoryWishData, wishFilteredData, setWishFilteredData, SortWishData, value2, setValue2, PriceData2 }}><WhishList/></DataContext.Provider>}/>
+          <Route path='wishlist' element={<DataContext.Provider value={{ getCartData, wishdata, setWishdata2, CategoryWishData, wishFilteredData, setWishFilteredData, SortWishData, value2, setValue2, PriceData2, HandleChangePage }}><WhishList/></DataContext.Provider>}/>
         </Routes>
       </BrowserRouter>
     </div>

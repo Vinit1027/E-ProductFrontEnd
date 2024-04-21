@@ -27,9 +27,6 @@ export default function ShopProducts( { FilteredData } ) {
   const { HandleChangePage, GetWishlistData } = useContext(DataContext);
 
 
-  console.log(Shopdata.length)
-
-
 
   const SwitchIndiPage = ()=> {
     navigate('/indipage');
@@ -49,8 +46,8 @@ export default function ShopProducts( { FilteredData } ) {
                 return (
 
                     <Grid key={ele._id} item lg={3} md={4} sm={4} xs={6} >
-                        <div className='wholeshiz2'>
-                          <div onClick={()=>{ HandleChangePage(ele); SwitchIndiPage();}}>
+                        <div className='wholeshiz2' onClick={()=>{ HandleChangePage(ele); SwitchIndiPage();}}>
+                          <div>
                             <img className='prodimg2' src={`https://e-products-api.onrender.com/${ele.images[0]}`}></img>
                           </div>
                           <div className='infobox2'>

@@ -80,7 +80,7 @@ export default function ProductTab2( { NewRdata }) {
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ width: '100%' }}>
-        <Box sx={{ borderColor: 'divider', display : 'flex', justifyContent : 'space-between', alignItems : 'center', marginLeft : '60px', marginRight : '60px'}}>
+        <Box className='newrel' sx={{ borderColor: 'divider', display : 'flex', justifyContent : 'space-between', alignItems : 'center', marginLeft : '60px', marginRight : '60px'}}>
             <div>
                 <h2>New Releases</h2>
             </div>

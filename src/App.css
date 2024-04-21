@@ -2093,6 +2093,21 @@
     }
 
 
+
+    /* Carousel Section */
+
+
+    .topbox{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+
+
+
+
+
+
     /* featured Categories */
 
 
@@ -2420,6 +2435,20 @@
   .contactmargin {
     padding-left: 0;
     margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width:770px){
+
+  /* New releases */
+
+  .newrel{
+    display: block!important;
+  }
+
+  .newrel h2{
+    text-align: center;
   }
 }
 

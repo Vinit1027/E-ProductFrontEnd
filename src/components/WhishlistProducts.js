@@ -25,7 +25,7 @@ export default function WhishlistProducts() {
 
   const navigate = useNavigate();
 
-  const { wishdata, wishFilteredData } = useContext(DataContext);
+  const { HandleChangePage, wishdata, wishFilteredData } = useContext(DataContext);
 
   const SwitchIndiPage = ()=> {
     navigate('/indipage');
@@ -44,7 +44,7 @@ export default function WhishlistProducts() {
 
                     <Grid key={ele._id} item lg={3} md={4} sm={4} xs={6} >
                         <div className='wholeshiz2'>
-                          <div onClick={()=>{ SwitchIndiPage();}}>
+                          <div onClick={()=>{ HandleChangePage(ele); SwitchIndiPage();}}>
                             <img className='prodimg2' src={`https://e-products-api.onrender.com/${ele.images[0]}`}></img>
                           </div>
                           <div className='infobox2'>
